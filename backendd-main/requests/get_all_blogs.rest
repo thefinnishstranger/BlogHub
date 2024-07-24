@@ -1,0 +1,2 @@
+GET https://bloglistbackend-ffe79c80663f.herokuapp.com/api/blogs
+Content-Type: application/json

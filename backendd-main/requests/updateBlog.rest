@@ -1,0 +1,7 @@
+PUT https://bloglistbackend-ffe79c80663f.herokuapp.com/api/blogs/669fb25cbb145cd90e4289d3
+Content-Type: application/json
+
+{
+    "title": "hello",
+    "blogContent": "this is great"
+}

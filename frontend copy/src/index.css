@@ -1,0 +1,92 @@
+* {
+  font-family: 'Zain', sans-serif !important;
+}
+
+body {
+  min-height: 100vh !important;
+  margin: 0;
+}
+
+#comment_button {
+  margin-top: 10px;
+}
+
+#delete_button {
+  margin-right: 40px;
+}
+
+#like_button {
+  margin-right: 40px;
+}
+
+.navbar-brand,
+.nav-link {
+  margin-left: 30px;
+}
+
+.custom-navbar {
+  border-radius: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.burger {
+  margin-right: 10px;
+}
+
+.logout_button {
+  margin-bottom: 10px;
+}
+
+.create_button {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.footer {
+  min-height: 50px;
+}
+
+.blog_text {
+  margin-top: 15px;
+}
+
+.blogs_text {
+  margin-top: 15px;
+}
+
+.custom_link {
+  color: black;
+}
+
+.custom_link:hover {
+  color: darkgray
+}
+
+.blogs_container {
+  border: 1px solid black
+}
+
+.login_button {
+  margin-top: 10px;
+  max-width: 185px;
+  width: 100%;
+  border-radius: 20px !important;
+}
+
+.username {
+  margin-bottom: 10px;
+}
+
+.password {
+  margin-bottom: 10px;
+}
+
+.formDiv {
+  padding: 15px;
+}
+
+.comment-list {
+  font-size: large;
+
+}

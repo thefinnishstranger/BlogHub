@@ -1,0 +1,12 @@
+POST https://bloglistbackend-ffe79c80663f.herokuapp.com/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pa29sYXMiLCJpZCI6IjY2NTU3Nzk3M2NkMTZmZjA0YWYwMjE3YyIsImlhdCI6MTcyMTczODc1OCwiZXhwIjoxNzIxNzQyMzU4fQ.eJQ3t4iik0lZl6GS_vSVjrNxh62RVe2uSQWBwZL94WM
+
+{
+  "title": "New Blog",
+  "author": "Author Name",
+  "url": "http://example.com",
+  "blogContent": "This is the content of the blog",
+  "eatass": "eating ass",
+  "likes": 0
+}
