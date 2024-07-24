@@ -14,8 +14,9 @@ jobs:
     concurrency: deploy-group
     steps:
       - uses: actions/checkout@v4
-      - uses: superfly/flyctl-actions/setup-flyctl@master
-      - uses: actions/setup-node@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
@@ -27,40 +28,24 @@ jobs:
         run: npm install
         working-directory: ./backend
 
-      - name: Start server in background
-        run: |
-          npm start &
-          sleep 10
-        working-directory: ./backend
-        env:
-          MONGO_URI: ${{ secrets.MONGO_URI }}
-          PORT: ${{ secrets.PORT }}
-
-      - name: Wait for server to start
-        run: sleep 10
-
       - name: Build frontend
-        run: |
-          npm run dev &
-          sleep 10
+        run: npm run build
         working-directory: ./frontend
 
-      - name: Wait for frontend to start
-        run: sleep 10
-
       - name: Deploy the frontend
-        run: flyctl deploy --remote-only
+        run: |
+          flyctl deploy --remote-only
         env:
-            FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-            working-directory: ./frontend
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+        working-directory: ./frontend
 
       - name: Deploy the backend
-        run: flyctl deploy --remote-only
+        run: |
+          flyctl deploy --remote-only
         env:
-            FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN2 }}
-            working-directory: ./backend
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN2 }}
+        working-directory: ./backend
 
-      - name: The job has succeeded
+      - name: Success
         if: ${{ success() }}
-        run: echo "Success!"
-        
+        run: echo "Deployment succeeded!"
