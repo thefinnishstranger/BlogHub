@@ -1,6 +1,6 @@
 import axios from "axios";
-const baseUrl = "https://bloglistbackend-ffe79c80663f.herokuapp.com/api/blogs"
-const userUrl = "https://bloglistbackend-ffe79c80663f.herokuapp.com/api/users"
+const baseUrl = "https://bloghubbackend.fly.dev/api/blogs"
+const userUrl = "https://bloghubbackend.fly.dev/api/users"
 
 let token = null;
 

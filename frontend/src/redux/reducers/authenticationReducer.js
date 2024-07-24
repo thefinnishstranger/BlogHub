@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const loginUrl = 'https://bloglistbackend-ffe79c80663f.herokuapp.com/api/login';
+const loginUrl = 'https://bloghubbackend.fly.dev/api/login';
 
 const authenticationSlice = createSlice({
     name: 'authentication',

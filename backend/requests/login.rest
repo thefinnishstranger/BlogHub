@@ -1,0 +1,7 @@
+POST https://bloghubbackend.fly.dev/api/login
+Content-Type: application/json
+
+{
+    "username": "nikolas",
+    "password": "salainen"
+}

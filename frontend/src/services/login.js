@@ -1,8 +1,9 @@
 import axios from "axios";
-const baseUrl = "https://bloglistbackend-ffe79c80663f.herokuapp.com/api/login";
+const baseUrl = "http://bloghubbackend.fly.dev/api/login";
 
 const login = async (credentials) => {
   const response = await axios.post(baseUrl, credentials);
+  console.log('logging in with: ', response);
   return response.data;
 };
 
