@@ -81,6 +81,11 @@ This is a full-stack blog application that allows users to create accounts, log 
 
   The frontend server will start on `http://localhost:3000`
 
+
+## Deployment
+
+The website is continuously integrated and deployed using GitHub Workflows. Changes pushed to the main branch are automatically built and deployed. You can view the live website at [BlogHub](https://bloglistappnikolasfrontend.fly.dev/)
+
 ## Contributing
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/YourFeature`)
