@@ -10,10 +10,6 @@ This is a full-stack blog application that allows users to create accounts, log 
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running Locally](#running-locally)
-- [Deployment](#deployment)
-  - [Frontend](#frontend)
-  - [Backend](#backend)
-- [Environment Variables](#environment-variables)
 - [Contributing](#contributing)
 - [License](#license)
 
