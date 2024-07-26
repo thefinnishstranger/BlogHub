@@ -90,5 +90,5 @@ This is a full-stack blog application that allows users to create accounts, log 
 
 For any questions or issues, please contact [nikolas.gustavson4@gmail.com](mailto:nikolas.gustavson4@gmail.com).
 
-## Licence
+## License
 This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/MIT) file for details.
