@@ -65,15 +65,16 @@ This is a full-stack blog application that allows users to create accounts, log 
 ## Running Locally
 
 1. **Set up environment variables:** Create a `.env` file in the `backend` directory with the following content:
+   ```bash
    PORT=5000
    MONGO_URI=your_monogdb_connection_string
    SECRET_KEY=your_secret_key
 
-2. **Start the backend server:**
+3. **Start the backend server:**
    ```bash
    npm start
 
-3. **Start the frontend development server:**
+4. **Start the frontend development server:**
    ```bash
    cd ../frontend
    npm run dev
