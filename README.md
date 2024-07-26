@@ -72,4 +72,23 @@ This is a full-stack blog application that allows users to create accounts, log 
    ```bash
    npm start
 
-  Make sure you create a `.env` file in the `backend` directory with the following environment variables:
+2. **Start the frontend development server:**
+   ```bash
+   cd ../frontend
+   npm run dev
+
+  The frontend server will start on `http://localhost:3000`
+
+## Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a pull request
+
+## Contact
+
+For any questions or issues, please contact [nikolas.gustavson4@gmail.com](mailto:nikolas.gustavson4@gmail.com).
+
+## Licence
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/MIT) file for details.
